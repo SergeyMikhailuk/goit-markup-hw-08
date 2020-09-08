@@ -1,0 +1,43 @@
+.title.secondary {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.section-work {
+  padding-top: 0;
+}
+
+.our-work-list {
+  display: flex;
+}
+
+.our-work-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.img-work {
+  position: relative;
+  display: flex;
+}
+
+.img-work .text {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

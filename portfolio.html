@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Studio(Портфолио)</title>
+    <title>Web Studio/Портфолио</title>
     <link
       rel="shortcut icon"
       href="./img/icons/shortcut.svg"
@@ -23,42 +23,66 @@
   </head>
   <body>
     <header class="header container">
-      <nav class="main-nav">
+      <div class="clear-header">
         <a href="./index.html" class="logo"
           >Web<span class="logo-header">Studio</span>
         </a>
 
-        <ul class="nav list">
-          <li class="item">
-            <a href="./index.html" class="link">Студия</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="link current">Портфолио</a>
-          </li>
-          <li class="item"><a href="#contacts" class="link">Контакты</a></li>
-        </ul>
-      </nav>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./img/menu/menu-sprite.svg#cross"
+            ></use>
+            <use class="icon-menu" href="./img/menu/menu-sprite.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div data-menu class="header-menu">
+        <nav class="main-nav">
+          <ul class="nav list">
+            <li class="item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link current">Портфолио</a>
+            </li>
+            <li class="item"><a href="#contacts" class="link">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <ul class="contact-header list">
-        <li class="item">
-          <a href="mailto:info@devstudio.com" class="link">
-            <svg class="email-icon icon">
-              <use href="./img/icons/sprite.svg#email"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="item">
-          <a href="tel:+380961111111" class="link">
-            <svg class="phone-icon icon">
-              <use href="./img/icons/sprite.svg#phone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+        <ul class="contact-header list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="email-icon icon">
+                <use href="./img/icons/sprite.svg#email"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="phone-icon icon">
+                <use href="./img/icons/sprite.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
-    <main>
+
+    <main class="portfolio">
       <section class="menu">
         <h1 class="hidden-title">Портфолио</h1>
         <ul class="list">
@@ -84,7 +108,7 @@
           <li class="item">
             <a href="#" class="link">
               <div class="project-img">
-                <img src="./img/our-projects/img.png" width="370" alt="lorem" />
+                <img src="./img/our-projects/img.png" alt="lorem" />
                 <div class="description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -102,11 +126,7 @@
           <li class="item">
             <a href="#" class="link">
               <div class="project-img">
-                <img
-                  src="./img/our-projects/img1.png"
-                  width="370"
-                  alt="lorem"
-                />
+                <img src="./img/our-projects/img1.png" alt="lorem" />
                 <div class="description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -124,11 +144,7 @@
           <li class="item">
             <a href="#" class="link">
               <div class="project-img">
-                <img
-                  src="./img/our-projects/img2.png"
-                  width="370"
-                  alt="lorem"
-                />
+                <img src="./img/our-projects/img2.png" alt="lorem" />
                 <div class="description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -146,11 +162,7 @@
           <li class="item">
             <a href="#" class="link">
               <div class="project-img">
-                <img
-                  src="./img/our-projects/img3.png"
-                  width="370"
-                  alt="lorem"
-                />
+                <img src="./img/our-projects/img3.png" alt="lorem" />
                 <div class="description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -168,11 +180,7 @@
           <li class="item">
             <a href="#" class="link">
               <div class="project-img">
-                <img
-                  src="./img/our-projects/img4.png"
-                  width="370"
-                  alt="lorem"
-                />
+                <img src="./img/our-projects/img4.png" alt="lorem" />
                 <div class="description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -190,11 +198,7 @@
           <li class="item">
             <a href="#" class="link">
               <div class="project-img">
-                <img
-                  src="./img/our-projects/img5.png"
-                  width="370"
-                  alt="lorem"
-                />
+                <img src="./img/our-projects/img5.png" alt="lorem" />
                 <div class="description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -212,11 +216,7 @@
           <li class="item">
             <a href="#" class="link">
               <div class="project-img">
-                <img
-                  src="./img/our-projects/img6.png"
-                  width="370"
-                  alt="lorem"
-                />
+                <img src="./img/our-projects/img6.png" alt="lorem" />
                 <div class="description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -234,11 +234,7 @@
           <li class="item">
             <a href="#" class="link">
               <div class="project-img">
-                <img
-                  src="./img/our-projects/img7.png"
-                  width="370"
-                  alt="lorem"
-                />
+                <img src="./img/our-projects/img7.png" alt="lorem" />
                 <div class="description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -256,11 +252,7 @@
           <li class="item">
             <a href="#" class="link">
               <div class="project-img">
-                <img
-                  src="./img/our-projects/img8.png"
-                  width="370"
-                  alt="lorem"
-                />
+                <img src="./img/our-projects/img8.png" alt="lorem" />
                 <div class="description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -280,10 +272,11 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div id="contacts">
+        <div id="contacts" class="footer-contacts">
           <a href="./index.html" class="logo"
-            >Web<span class="logo-footer">Studio</span>
-          </a>
+            >Web<span class="logo-footer">Studio</span></a
+          >
+
           <address class="address">
             <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="contact-footer list">
@@ -349,14 +342,17 @@
     </footer>
     <script>
       (() => {
-        const elements = document.querySelectorAll('.js-speaker-form');
-        elements.forEach(element => {
-          element.addEventListener('submit', e => {
-            e.preventDefault();
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`),
-            );
-          });
+        const menuBtnRef = document.querySelector('[data-menu-button]');
+        const mobileMenuRef = document.querySelector('[data-menu]');
+
+        menuBtnRef.addEventListener('click', () => {
+          const expanded =
+            menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+
+          menuBtnRef.classList.toggle('is-open');
+          menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+          mobileMenuRef.classList.toggle('is-open');
         });
       })();
     </script>

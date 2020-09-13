@@ -4,12 +4,21 @@
   background-color: #2f303a;
 }
 
-.footer .container {
+.footer .container,
+.footer-contacts,
+.footer .address,
+.footer .join,
+.footer .subscription,
+.subscription .block-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-contacts {
+  margin-bottom: 60px;
 }
 
 .footer .logo {
-  display: block;
   margin-bottom: 20px;
 }
 
@@ -43,8 +52,7 @@
 /*Footer  Join */
 
 .join {
-  margin-left: 70px;
-  margin-top: 12px;
+  margin-bottom: 60px;
 }
 
 .join .join-title {
@@ -69,10 +77,9 @@
 }
 
 /* Footer subscribe */
-
 .subscription {
-  margin-left: 93px;
-  margin-top: 12px;
+  display: block;
+  width: 100%;
 }
 
 .subscription .label {
@@ -85,14 +92,14 @@
 }
 
 .subscription .block-form {
+  width: 100%;
   margin-top: 20px;
-  display: inline-flex;
 }
 
 .subscription .input {
-  width: 358px;
+  width: 100%;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding-left: 16px;
   background-color: inherit;
   color: #acacb0;

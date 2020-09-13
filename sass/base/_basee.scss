@@ -24,20 +24,41 @@ img {
 }
 
 .container {
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: $mobile) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list {
   margin: 0;
   padding: 0;
+}
+
+.link {
+  color: $title-text-color;
+  line-height: 0;
+  text-decoration: none;
+  transition: color $time $cubic;
 }
 
 .item {

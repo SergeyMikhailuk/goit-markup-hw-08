@@ -1,35 +1,122 @@
 .header {
+  position: relative;
+  padding: 16px 15px;
+  min-height: 60px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(100%-1px);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid #ececec;
+  }
+
+  @media screen and (min-width: $mobile) {
+    max-width: 480px;
+  }
+}
+.clear-header {
   display: flex;
   align-items: center;
-  .link {
-    display: inline-flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  justify-content: space-between;
+}
+
+//Logo header
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $logo-color;
+}
+
+.logo-header {
+  color: #000000;
+}
+
+//munu button
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-button {
+  &:hover {
+    .icon-cross,
+    .icon-menu {
+      fill: $logo-color;
+    }
   }
 }
 
+//Header menu
+
+.header-menu.is-open {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  z-index: 2;
+}
+
+.header-menu {
+  display: none;
+}
+
+//Header nav-link
+
 .main-nav {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .nav {
   padding: 0;
-  margin-left: 93px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .item:not(:last-child) {
-    margin-right: 50px;
-  }
-
-  .link {
-    position: relative;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
 .nav .link {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
   &::after {
     content: '';
     position: absolute;
@@ -42,38 +129,11 @@
     opacity: 0;
     transition: opacity $time $cubic;
   }
+
   &:hover::after,
   &:focus::after {
     opacity: 1;
   }
-}
-
-.nav .current {
-  color: $logo-color;
-  &::after {
-    opacity: 1;
-  }
-}
-
-.logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: $logo-color;
-}
-
-.logo-header {
-  color: #000000;
-}
-
-.link {
-  color: $title-text-color;
-  line-height: 0;
-  text-decoration: none;
-  transition: color $time $cubic;
 }
 
 .header .link {
@@ -82,17 +142,31 @@
     color: $logo-color;
     fill: $logo-color;
   }
+
+  &.current {
+    color: $logo-color;
+
+    &::after {
+      opacity: 1;
+    }
+  }
 }
+
+//Header contact
 
 .contact-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  & .item:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 .contact-header .link {
@@ -115,8 +189,4 @@
 .phone-icon {
   width: 10px;
   height: 16px;
-}
-
-.contact-header .item:not(:last-child) {
-  margin-right: 50px;
 }

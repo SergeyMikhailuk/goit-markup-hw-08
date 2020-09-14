@@ -2,17 +2,52 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-}
-
-.footer .container,
-.footer-contacts,
-.footer .address,
-.footer .join,
-.footer .subscription,
-.subscription .block-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media screen and (max-width: 1199px) {
+    .container,
+    .address,
+    .join,
+    .subscription,
+    .block-form,
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    .contacts-join {
+      display: flex;
+    }
+    .footer-contacts {
+      margin-right: 165px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    height: 252px;
+    .container,
+    .contacts-join {
+      display: flex;
+      flex-direction: row;
+    }
+    .footer-contacts,
+    .join {
+      margin: 0;
+    }
+    .join {
+      padding-top: 12px;
+      margin-left: 70px;
+    }
+    .subscription {
+      margin-left: 93px;
+    }
+    .block-form {
+      display: flex;
+      .input {
+        width: 358px;
+        margin-right: 12px;
+      }
+    }
+  }
 }
 .footer-contacts {
   margin-bottom: 60px;
@@ -27,6 +62,8 @@
 }
 
 .address {
+  min-width: 230px;
+  margin-top: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -68,6 +105,10 @@
   color: $primary-white-color;
 }
 
+.join .networks {
+  justify-content: flex-start;
+}
+
 .join .link {
   fill: $primary-white-color;
   background-color: rgba(255, 255, 255, 0.1);
@@ -97,7 +138,7 @@
 }
 
 .subscription .input {
-  width: 100%;
+  width: 450px;
   height: 50px;
   margin-bottom: 20px;
   padding-left: 16px;

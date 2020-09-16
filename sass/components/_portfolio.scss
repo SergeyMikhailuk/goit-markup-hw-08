@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 60px 15px;
+  padding: 60px 0;
   @media screen and(min-width: $tablet) {
     padding-left: 0;
     padding-right: 0;
@@ -12,6 +12,8 @@
 /* Buttons */
 .menu {
   margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .menu .list {
   display: flex;

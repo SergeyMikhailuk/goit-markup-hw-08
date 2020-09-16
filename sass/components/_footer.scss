@@ -21,6 +21,11 @@
     .footer-contacts {
       margin-right: 165px;
     }
+    .block-form {
+      .input {
+        width: 450px;
+      }
+    }
   }
   @media screen and (min-width: $desktop) {
     height: 252px;

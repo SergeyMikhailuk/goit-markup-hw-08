@@ -31,7 +31,6 @@
           type="button"
           class="menu-button"
           aria-expanded="false"
-          aria-controls="menu-container"
           data-menu-button
         >
           <svg
@@ -153,9 +152,13 @@
           <li class="item">
             <div class="img-work">
               <img
-                src="./img/what-are-we-doing/img1.png"
-                width="370"
-                alt="keyboard"
+                class="photo"
+                src="./img/what-doing/img1/img.jpg"
+                alt="notebook"
+                srcset="
+                  ./img/what-doing/img1/img.jpg,
+                  ./img/what-doing/img1/img2x.jpg 2x
+                "
               />
               <p class="text">Десктопные приложения</p>
             </div>
@@ -163,9 +166,13 @@
           <li class="item">
             <div class="img-work">
               <img
-                src="./img/what-are-we-doing/img2.png"
-                width="370"
-                alt="mobile phone"
+                class="photo"
+                src="./img/what-doing/img2/img.jpg"
+                alt="notebook"
+                srcset="
+                  ./img/what-doing/img2/img.jpg,
+                  ./img/what-doing/img2/img2x.jpg 2x
+                "
               />
               <p class="text">Мобильные приложения</p>
             </div>
@@ -173,9 +180,13 @@
           <li class="item">
             <div class="img-work">
               <img
-                src="./img/what-are-we-doing/img3.png"
-                width="370"
-                alt="draw on desktop"
+                class="photo"
+                src="./img/what-doing/img3/img.jpg"
+                alt="notebook"
+                srcset="
+                  ./img/what-doing/img3/img.jpg,
+                  ./img/what-doing/img3/img2x.jpg 2x
+                "
               />
               <p class="text">Дизайнерские решения</p>
             </div>
@@ -187,7 +198,54 @@
           <h2 class="title secondary">Наша команда</h2>
           <ul class="list">
             <li class="item">
-              <img src="./img/our-team/img1.jpg" alt="people" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/our-team/img1/mobile/mobile.webp    1x,
+                    ./img/our-team/img1/mobile/mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img1/tablet/tablet.webp    1x,
+                    ./img/our-team/img1/tablet/tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img1/desktop/desktop.webp    1x,
+                    ./img/our-team/img1/desktop/desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img1/mobile/mobile.jpg    1x,
+                    ./img/our-team/img1/mobile/mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img1/tablet/tablet.jpg    1x,
+                    ./img/our-team/img1/tablet/tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img1/desktop/desktop.jpg    1x,
+                    ./img/our-team/img1/desktop/desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/our-team/img1/mobile/mobile.jpg" alt="people" />
+              </picture>
               <div class="about-person">
                 <h3 class="name">Игорь Демьяненко</h3>
                 <p class="skill">Product Designer</p>
@@ -224,7 +282,54 @@
               </div>
             </li>
             <li class="item">
-              <img src="./img/our-team/img2.jpg" alt="people" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/our-team/img2/mobile/mobile.webp    1x,
+                    ./img/our-team/img2/mobile/mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img2/tablet/tablet.webp    1x,
+                    ./img/our-team/img2/tablet/tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img2/desktop/desktop.webp    1x,
+                    ./img/our-team/img2/desktop/desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img2/mobile/mobile.jpg    1x,
+                    ./img/our-team/img2/mobile/mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img2/tablet/tablet.jpg    1x,
+                    ./img/our-team/img2/tablet/tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img2/desktop/desktop.jpg    1x,
+                    ./img/our-team/img2/desktop/desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/our-team/img2/mobile/mobile.jpg" alt="people" />
+              </picture>
               <div class="about-person">
                 <h3 class="name">Ольга Репина</h3>
                 <p class="skill">Frontend Developer</p>
@@ -261,7 +366,54 @@
               </div>
             </li>
             <li class="item">
-              <img src="./img/our-team/img3.jpg" alt="people" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/our-team/img3/mobile/mobile.webp    1x,
+                    ./img/our-team/img3/mobile/mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img3/tablet/tablet.webp    1x,
+                    ./img/our-team/img3/tablet/tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img3/desktop/desktop.webp    1x,
+                    ./img/our-team/img3/desktop/desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img3/mobile/mobile.jpg    1x,
+                    ./img/our-team/img3/mobile/mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img3/tablet/tablet.jpg    1x,
+                    ./img/our-team/img3/tablet/tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img3/desktop/desktop.jpg    1x,
+                    ./img/our-team/img3/desktop/desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/our-team/img3/mobile/mobile.jpg" alt="people" />
+              </picture>
               <div class="about-person">
                 <h3 class="name">Николай Тарасов</h3>
                 <p class="skill">Marketing</p>
@@ -298,7 +450,54 @@
               </div>
             </li>
             <li class="item">
-              <img src="./img/our-team/img4.jpg" alt="people" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/our-team/img4/mobile/mobile.webp    1x,
+                    ./img/our-team/img4/mobile/mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img4/tablet/tablet.webp    1x,
+                    ./img/our-team/img4/tablet/tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img4/desktop/desktop.webp    1x,
+                    ./img/our-team/img4/desktop/desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img4/mobile/mobile.jpg    1x,
+                    ./img/our-team/img4/mobile/mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img4/tablet/tablet.jpg    1x,
+                    ./img/our-team/img4/tablet/tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/img4/desktop/desktop.jpg    1x,
+                    ./img/our-team/img4/desktop/desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/our-team/img4/mobile/mobile.jpg" alt="people" />
+              </picture>
               <div class="about-person">
                 <h3 class="name">Михаил Ермаков</h3>
                 <p class="skill">UI Designer</p>

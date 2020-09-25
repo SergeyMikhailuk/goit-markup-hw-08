@@ -23,13 +23,11 @@
 .our-work-list .item:not(:last-child) {
   margin-right: 30px;
 }
-
-.img-work {
+.our-work-list .item {
   position: relative;
-  display: flex;
 }
 
-.img-work .text {
+.our-work-list .text {
   position: absolute;
   display: inline-flex;
   align-items: center;

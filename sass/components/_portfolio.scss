@@ -102,10 +102,6 @@
   overflow: hidden;
 }
 
-// .project-img img {
-//   width: 450px;
-// }
-
 .description {
   position: absolute;
   bottom: 0;
@@ -116,8 +112,8 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform $time $cubic;
-  .project-img:hover &,
-  .project-img:focus & {
+  .item:hover &,
+  .item:focus & {
     transform: translateY(0);
   }
 }

@@ -1,2 +1,2 @@
-# goit-markup-hw-08
+#webstudio
 (adaptive markup)
